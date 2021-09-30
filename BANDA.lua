@@ -2007,7 +2007,7 @@ end
 if text == 'المبرمج فرعون الكبير ' and Debn(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
-「المبرمج استروكس لو حابب تتواصل معاه
+「المبرمج فرعون الكبير لو حابب تتواصل معاه
 اتبع الزر إلى تحت ↓」
 ]] 
 keyboard = {}  
@@ -3752,7 +3752,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. ms
 end
 
 
-if text == 'حربي ' or text == 'حربوكا' or text == 'مالك السورس' then
+if text == 'حربي '  then
 local Text = [[
 مع مالك السورس لو حابب تتواصل معاه
 اتبع الزر إلى تحت ↓
@@ -3788,14 +3788,14 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token.. '/sendPhoto?chat_id='  .. msg.chat_id_ ..  '&photo=https://t.me/D_E_V_O_F_F_L_I_N_E&caption='  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text ==  'كنجو'   or text == 'المبرمج كنجو'  or text ==  'مالك السورس ' then
+if text ==  'كنجو'  then
 local Text = [[
 مع المبرمج كنجو لو حابب تتواصل معاه
 اتبع الزر إلى تحت ↓
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝗗𝙀𝗩 𝗞𝙄𝗡𝗚𝙊𝙊' ,url="t.me/D_E_V_K_I_N_G_O_O"}},
+{{text = '𝗗𝙀𝗩 𝗞𝙄𝗡𝗚𝙊𝙊',url="t.me/D_E_V_K_I_N_G_O_O"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token.. '/sendPhoto?chat_id='  .. msg.chat_id_ ..  '&photo=https://t.me/D_E_V_K_I_N_G_O_O_A3&caption='  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3812,14 +3812,14 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token.. '/sendPhoto?chat_id='  .. msg.chat_id_ ..  '&photo=https://t.me/M_ahmu_d&caption='  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text ==  'جبري' then
+if text ==  'جبري'  then
 local Text = [[
 مع مبرمج السورس لو حابب تتواصل معاه
 اتبع الزر إلى تحت ↓
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text =  '𝗗𝙀𝗩 𝗔𝗛𝗠𝙀𝗗' ,url="t.me/G_G_A_B_E_3"}},
+{{text =  '𝗗𝙀𝗩 𝗔𝗛𝗠𝙀𝗗',url="t.me/G_G_A_B_E_3"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token.. '/sendPhoto?chat_id='  .. msg.chat_id_ ..  '&photo=https://t.me/G_G_A_B_E_3&caption='  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
