@@ -370,7 +370,7 @@ var =  'مبرمج جميع السورسات '
 elseif tonumber(user_id) == tonumber(1885706669) then
 var =  'المبرمج زغلل'
 elseif tonumber(user_id) == tonumber(1952686240) then
-var = 'المبرمج كنجو'
+var = 'المبرمج كينجو'
 elseif tonumber(user_id) == tonumber(1600370037) then
 var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
@@ -1950,7 +1950,7 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 if text == 'الاصدار' and Debn(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ◍ اصدار سورس فرعون{ S:15✓}')
+send(msg.chat_id_, msg.id_,' ◍ اصدار سورس فرعون{ S:16✓}')
 end
 if text == '⇣───「 قـناه المطورين」───⇣' then
 local Text = [[ 
@@ -3752,7 +3752,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. ms
 end
 
 
-if text == 'حربي '  then
+if text == 'حربي'  then
 local Text = [[
 مع مالك السورس لو حابب تتواصل معاه
 اتبع الزر إلى تحت ↓
@@ -3778,7 +3778,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 if text ==  'اوفلاين'   then
 local Text = [[
-المبرمج افلاين  لؤ عٲيز تتؤٲصل معٲه
+مبرمج جميع السورسات  لؤ عٲيز تتؤٲصل معٲه
 اتبع الزر إلى تحت ↓
 ]]
 keyboard = {} 
@@ -5940,7 +5940,7 @@ send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مبرمج السورس
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1952686240) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كنجو  عام")
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كينجو  عام")
 return false 
 end
 database:sadd(bot_id..'GBan:User', result.sender_user_id_)
@@ -6002,7 +6002,7 @@ send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر مبرمج السورس 
 return false 
 end
 if result.id_ == tonumber(1952686240) then
-send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر المبرمج كنجو  \n")
+send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر المبرمج كينجو  \n")
 return false 
 end
 usertext = '\n ◍ الـعـضو   ⇠ ['..result.title_..'](t.me/'..(username or 'source_frawn')..')'
@@ -6058,7 +6058,7 @@ send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مبرمج السورس
 return false 
 end
 if tonumber(userid) == tonumber(1952686240) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كنجو  عام")
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كينجو  عام")
 return false 
 end
 database:sadd(bot_id..'GBan:User', userid)
@@ -6115,7 +6115,7 @@ send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مبرمج السورس
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1952686240) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كنجو  عام")
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كينجو  عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', result.sender_user_id_)
@@ -6176,7 +6176,7 @@ send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر مبرمج السورس 
 return false 
 end
 if result.id_ == tonumber(1952686240) then
-send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر المبرمج كنجو \n")
+send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر المبرمج كينجو \n")
 return false 
 end
 usertext = '\n ◍ الـعـضو   ⇠ ['..result.title_..'](t.me/'..(username or 'source_frawn')..')'
@@ -6232,7 +6232,7 @@ send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مبرمج السورس
 return false 
 end
 if tonumber(userid) == tonumber(1952686240) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كنجو  عام")
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كينجو  عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', userid)
@@ -6687,7 +6687,7 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 
-if text == ("رفع فرعون") and msg.reply_to_message_id_ and Sudo(msg) then
+if text == ("رفع مرات اوفلاين") and msg.reply_to_message_id_ and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6708,8 +6708,8 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
-if text and text:match("^رفع فرعون@(.*)$") and Sudo(msg) then
-local username = text:match("^رفع فرعون@(.*)$")
+if text and text:match("^رفع مرات اوفلاين@(.*)$") and Sudo(msg) then
+local username = text:match("^رفع مرات اوفلاين@(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6737,8 +6737,8 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 return false
 end
-if text and text:match("^رفع فرعون(%d+)$") and Sudo(msg) then
-local userid = text:match("^رفع فرعون(%d+)$") 
+if text and text:match("^رفع مرات اوفلاين(%d+)$") and Sudo(msg) then
+local userid = text:match("^رفع مرات اوفلاين(%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -12664,7 +12664,7 @@ end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
 
-if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text=="لب سوبر خاص" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if database:get(bot_id..'Bc:Bots') and not Debn(msg) then 
 send(msg.chat_id_, msg.id_,' ◍ الاذاعه معطله من قبل المطور الاساسي')
 return false
@@ -12779,7 +12779,7 @@ end
 if database:sismember(bot_id.."Sudo:User",result.id_) then
 dev = "المطور ،" else dev = "" end
 if database:sismember(bot_id.."CoSu",result.id_) then
-cu = "فرعون،" else cu = "" end
+cu = "مرات اوفلاين" else cu = "" end
 if database:sismember(bot_id.."Basic:Constructor"..msg.chat_id_, result.id_) then
 crr = "منشئ اساسي ،" else crr = "" end
 if database:sismember(bot_id..'Constructor'..msg.chat_id_, result.id_) then
@@ -12860,7 +12860,7 @@ end
 if database:sismember(bot_id..'Sudo:User',result.sender_user_id_) then
 dev = 'المطور ،' else dev = '' end
 if database:sismember(bot_id..'CoSu'..msg.chat_id_, result.sender_user_id_) then
-cu = 'فرعون،' else cu = '' end
+cu = 'مرات اوفلاين ،' else cu = '' end
 if database:sismember(bot_id..'Basic:Constructor'..msg.chat_id_, result.sender_user_id_) then
 crr = 'منشئ اساسي ،' else crr = '' end
 if database:sismember(bot_id..'Constructor'..msg.chat_id_, result.sender_user_id_) then
@@ -13663,8 +13663,8 @@ send(msg.chat_id_,msg.id_, '◍ محصلش بطل تطبيل..🙄💘')
 return false
 end
 
-if text == 'زخرفه' or text == 'زخرفة' then
-send(msg.chat_id_,msg.id_, 'اكتب زخرفه + الاسم للي هتزخرفه مثال زخرفه فرعون ') 
+if text == 'مبرمج' or text == 'فرعون' then
+send(msg.chat_id_,msg.id_, '[المبرمج فرعون الكبير يكتفمك نو ريب](https://t.me/DEV_FRAWN)') 
 return false
 end
 
@@ -13784,7 +13784,7 @@ send(msg.chat_id_,msg.id_, '◍ نت هتنكد لي طيب..🥺💔')
 return false
 end
 
-if text == '😹😹😹' or text == '😹😹😹' then
+if text == '😹😹😹' or text == '😹😹' then
 send(msg.chat_id_,msg.id_, '◍ بتضحك علي خيبتك..🙄💘') 
 return false
 end
@@ -13854,6 +13854,26 @@ list = {'قفل المحن'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
 send(msg.chat_id_,msg.id_, 'اهلا عزيزي تم قفل المحن بنجاح اتمحونوا بف عشان المراره 😹◉') 
+return false
+end
+end
+end
+
+if text then 
+list = {'قفل الحك'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, 'تم قفل الحك يله اي حكك معرص يخرج ده جروب محترم😹' ) 
+return false
+end
+end
+end
+
+if text then 
+list = {'فتح الحك'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_,'تم فتح الحك يله حكو بقه صحاب الجروب قلبه كبريه') 
 return false
 end
 end
@@ -14002,7 +14022,7 @@ end
 if text == 'هاي' or text == 'هيي' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_," ☆معطله") 
+send(msg.chat_id_, msg.id_," العب تري😹") 
 return false  
 end
 send(msg.chat_id_,msg.id_, '[باي..😺💜](t.me/source_frawn)')
