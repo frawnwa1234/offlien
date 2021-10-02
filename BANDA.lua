@@ -6701,7 +6701,7 @@ function start_function(extra, result, success)
 database:sadd(bot_id..'CoSu'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 usertext = '\n ◍ الـعـضو   ⇠ ['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
-status  = '\n ◍ تم تقيته مرات اوفلاين'
+status  = '\n ◍ تم ترقيته مرات اوفلاين'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
@@ -6727,7 +6727,7 @@ return false
 end      
 database:sadd(bot_id..'CoSu'..msg.chat_id_, result.id_)
 usertext = '\n ◍ الـعـضو   ⇠ ['..result.title_..'](t.me/'..(username or 'textchuser')..')'
-status  = '\n ◍ تم تقيته مرات اوفلاين'
+status  = '\n ◍ تم ترقيته مرات اوفلاين'
 texts = usertext..status
 else
 texts = ' ◍ لا يوجد حساب بهاذا المعرف'
@@ -6752,11 +6752,11 @@ database:sadd(bot_id..'CoSu'..msg.chat_id_, userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
 usertext = '\n ◍ الـعـضو   ⇠ ['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
-status  = '\n ◍ تم تقيته مرات اوفلاين'
+status  = '\n ◍ تم ترقيته مرات اوفلاين'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
 usertext = '\n ◍ الـعـضو   ⇠ '..userid..''
-status  = '\n ◍ تم تقيته مرات اوفلاين'
+status  = '\n ◍ تم ترقيته مرات اوفلاين'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
