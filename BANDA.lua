@@ -6701,7 +6701,7 @@ function start_function(extra, result, success)
 database:sadd(bot_id..'CoSu'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 usertext = '\n ◍ الـعـضو   ⇠ ['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
-status  = '\n ◍ تم ترقيته فرعون'
+status  = '\n ◍ تم تقيته مرات اوفلاين'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
@@ -6727,7 +6727,7 @@ return false
 end      
 database:sadd(bot_id..'CoSu'..msg.chat_id_, result.id_)
 usertext = '\n ◍ الـعـضو   ⇠ ['..result.title_..'](t.me/'..(username or 'textchuser')..')'
-status  = '\n ◍ تم ترقيته فرعون'
+status  = '\n ◍ تم تقيته مرات اوفلاين'
 texts = usertext..status
 else
 texts = ' ◍ لا يوجد حساب بهاذا المعرف'
@@ -6752,16 +6752,16 @@ database:sadd(bot_id..'CoSu'..msg.chat_id_, userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
 usertext = '\n ◍ الـعـضو   ⇠ ['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
-status  = '\n ◍ تم ترقيته فرعون'
+status  = '\n ◍ تم تقيته مرات اوفلاين'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
 usertext = '\n ◍ الـعـضو   ⇠ '..userid..''
-status  = '\n ◍ تم ترقيته فرعون'
+status  = '\n ◍ تم تقيته مرات اوفلاين'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-if text == ("تنزيل فرعون") and msg.reply_to_message_id_ and Sudo(msg) then
+if text == ("تنزيل مرات اوفلاين") and msg.reply_to_message_id_ and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6782,8 +6782,8 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
-if text and text:match("^تنزيل فرعون@(.*)$") and Sudo(msg) then
-local username = text:match("^تنزيل فرعون@(.*)$")
+if text and text:match("^تنزيل مرات اوفلاين@(.*)$") and Sudo(msg) then
+local username = text:match("^تنزيل مرات اوفلاين@(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6807,8 +6807,8 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 return false
 end
-if text and text:match("^تنزيل فرعون(%d+)$") and Sudo(msg) then
-local userid = text:match("^تنزيل فرعون(%d+)$") 
+if text and text:match("^تنزيل مرات اوفلاين(%d+)$") and Sudo(msg) then
+local userid = text:match("^تنزيل مرات اوفلاين(%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
