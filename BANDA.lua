@@ -3744,7 +3744,8 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '𝗗𝙀𝗩 𝗙𝙍𝗔𝙒𝗡',url="t.me/DEV_FRAWN"},{text = '𝗗𝙀𝗩 𝙊𝗙𝗙𝗟𝙄𝗡𝙀' ,url="t.me/D_E_V_O_F_F_L_I_N_E"}},
 {{text = '𝗗𝙀𝗩 𝗛𝗔𝙍𝗕𝙊𝗞𝗔𝗔𝙄', url="t.me/DvH7rboka_A3"},{text =  '𝗗𝙀𝗩 𝗞𝙄𝗡𝗚𝙊𝙊' ,url="t.me/D_E_V_K_I_N_G_O_O"}},
-{{text =  '𝗗𝙀𝗩 𝗔𝗛𝗠𝙀𝗗',url="t.me/G_G_A_B_E_3"},{text = '𝗖𝗛 𝗔𝗟𝗠𝙊𝗟𝙐𝗞', url="t.me/source_frawn"}},
+{{text =  '𝗗𝙀𝗩 𝙂𝘼𝘽𝙀𝙍',url="t.me/G_G_A_B_E_3"},{text = '𝗗𝙀𝗩 𝗭𝗞𝗟𝗔𝗟',url="t.me/M_ahmu_d"}},
+{{text = '𝗖𝗛 𝗔𝗟𝗠𝙊𝗟𝙐𝗞', url="t.me/source_frawn"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -3819,7 +3820,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text =  '𝗗𝙀𝗩 𝗔𝗛𝗠𝙀𝗗',url="t.me/G_G_A_B_E_3"}},
+{{text =  '𝗗𝙀𝗩 𝙂𝘼𝘽𝙀𝙍',url="t.me/G_G_A_B_E_3"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token.. '/sendPhoto?chat_id='  .. msg.chat_id_ ..  '&photo=https://t.me/G_G_A_B_E_3&caption='  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
