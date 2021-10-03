@@ -182,7 +182,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,2026498957,1952686240,1970574026,1885706669,1600370037,1967887608}   
+sudo_users = {SUDO,2026498957,1933161559,1970574026,1885706669,1600370037,1967887608}   
 function SudoBot(msg)  
 local BANDA = false  
 for k,v in pairs(sudo_users) do  
@@ -323,7 +323,7 @@ elseif tonumber(user_id) == tonumber(2026498957) then
 var = true  
 elseif tonumber(user_id) == tonumber(1885706669) then
 var = true  
-elseif tonumber(user_id) == tonumber(1952686240) then
+elseif tonumber(user_id) == tonumber(1933161559) then
 var = true
 elseif tonumber(user_id) == tonumber(1600370037) then
 var = true  
@@ -369,6 +369,8 @@ elseif tonumber(user_id) == tonumber(2026498957) then
 var =  'مبرمج جميع السورسات '
 elseif tonumber(user_id) == tonumber(1885706669) then
 var =  'المبرمج زغلل'
+elseif tonumber(user_id) == tonumber(1933161559) then
+var = 'مطور السورس '
 elseif tonumber(user_id) == tonumber(1952686240) then
 var = 'المبرمج كينجو'
 elseif tonumber(user_id) == tonumber(1600370037) then
@@ -3742,9 +3744,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝗗𝙀𝗩 𝗙𝙍𝗔𝙒𝗡',url="t.me/DEV_FRAWN"},{text = '𝗗𝙀𝗩 𝙊𝗙𝗙𝗟𝙄𝗡𝙀' ,url="t.me/D_E_V_O_F_F_L_I_N_E"}},
-{{text = '𝗗𝙀𝗩 𝗛𝗔𝙍𝗕𝙊𝗞𝗔𝗔𝙄', url="t.me/DvH7rboka_A3"},{text =  '𝗗𝙀𝗩 𝗞𝙄𝗡𝗚𝙊𝙊' ,url="t.me/D_E_V_K_I_N_G_O_O"}},
-{{text =  '𝗗𝙀𝗩 𝙂𝘼𝘽𝙀𝙍',url="t.me/G_G_A_B_E_3"},{text = '𝗗𝙀𝗩 𝗭𝗞𝗟𝗔𝗟',url="t.me/M_ahmu_d"}},
+{{text = '𝗗𝙀𝗩 𝗦𝙊𝙐𝙍𝗖𝙀',url="t.me/source_almoluk"}},
 {{text = '𝗖𝗛 𝗔𝗟𝗠𝙊𝗟𝙐𝗞', url="t.me/source_frawn"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -3791,7 +3791,7 @@ https.request("https://api.telegram.org/bot"..token.. '/sendPhoto?chat_id='  .. 
 end
 if text ==  'كينجو'  then
 local Text = [[
-مع المبرمج كينجو لو حابب تتواصل معاه
+مع مطور السورس لو حابب تتواصل معاه
 اتبع الزر إلى تحت ↓
 ]]
 keyboard = {} 
@@ -3824,6 +3824,18 @@ keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token.. '/sendPhoto?chat_id='  .. msg.chat_id_ ..  '&photo=https://t.me/G_G_A_B_E_3&caption='  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text ==  'بندوق'  then
+local Text = [[
+مع مطور السورس لو حابب تتواصل معاه
+اتبع الزر إلى تحت ↓
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '𝗗𝙀𝗩 𝗕𝙊𝗡𝗗𝙊𝗞' ,url="t.me/X_BONDOK_X"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..  '/sendPhoto?chat_id='   .. msg.chat_id_ ..   '&photo=https://t.me/X_BONDOK_X&caption='   .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'يوتيوب' or text == 'بحث' or text == 'اليوتيوب' then
@@ -5940,8 +5952,8 @@ if tonumber(result.sender_user_id_) == tonumber(1600370037) then
 send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1952686240) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كينجو  عام")
+if tonumber(result.sender_user_id_) == tonumber(1933161559) then  
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مطور السورس  عام")
 return false 
 end
 database:sadd(bot_id..'GBan:User', result.sender_user_id_)
@@ -6002,8 +6014,8 @@ if result.id_ == tonumber(1600370037) then
 send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر مبرمج السورس  \n")
 return false 
 end
-if result.id_ == tonumber(1952686240) then
-send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر المبرمج كينجو  \n")
+if result.id_ == tonumber(1933161559) then
+send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر مطور السورس  \n")
 return false 
 end
 usertext = '\n ◍ الـعـضو   ⇠ ['..result.title_..'](t.me/'..(username or 'source_frawn')..')'
@@ -6058,8 +6070,8 @@ if tonumber(userid) == tonumber(1600370037) then
 send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مبرمج السورس  عام")
 return false 
 end
-if tonumber(userid) == tonumber(1952686240) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كينجو  عام")
+if tonumber(userid) == tonumber(1933161559) then  
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مطور السورس  عام")
 return false 
 end
 database:sadd(bot_id..'GBan:User', userid)
@@ -6115,8 +6127,8 @@ if tonumber(result.sender_user_id_) == tonumber(1600370037) then
 send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مبرمج السورس  عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1952686240) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كينجو  عام")
+if tonumber(result.sender_user_id_) == tonumber(1933161559) then  
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مطور السورس  عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', result.sender_user_id_)
@@ -6176,8 +6188,8 @@ if result.id_ == tonumber(1600370037) then
 send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(1952686240) then
-send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر المبرمج كينجو \n")
+if result.id_ == tonumber(1933161559) then
+send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر مطور السورس \n")
 return false 
 end
 usertext = '\n ◍ الـعـضو   ⇠ ['..result.title_..'](t.me/'..(username or 'source_frawn')..')'
@@ -6232,8 +6244,8 @@ if tonumber(userid) == tonumber(1600370037) then
 send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مبرمج السورس  عام")
 return false 
 end
-if tonumber(userid) == tonumber(1952686240) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كينجو  عام")
+if tonumber(userid) == tonumber(1933161559) then  
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مطور السورس  عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', userid)
